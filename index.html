@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- The viewport tag is what makes the layout respond to phone screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kora Store | Online Clothing Store</title>
+
+  <!-- Roboto font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS framework (extra points) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Our own styles load after Bootstrap so they can override it -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header sticky-top">
+
+    <!-- Small announcement strip above the menu -->
+    <div class="promo-bar text-center">
+      Free delivery on orders above 50,000 naira
+    </div>
+
+    <!-- Bootstrap navbar: collapses into a menu button on small screens -->
+    <nav class="navbar navbar-expand-lg main-nav">
+      <div class="container">
+        <a class="navbar-brand brand" href="#home">Kora<span class="brand-accent">Store</span></a>
+
+        <!-- Menu button, only visible on mobile and tablet -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainMenu" aria-controls="mainMenu"
+                aria-expanded="false" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why-us">Why us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#newsletter">Offers</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-accent" href="#products">Shop now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <!-- gy-5 only adds space between stacked rows, gx-lg-5 adds side space on desktop only -->
+        <div class="row align-items-center gy-5 gx-lg-5">
+
+          <!-- Hero text -->
+          <div class="col-lg-6">
+            <p class="eyebrow">New season collection</p>
+            <h1 class="hero-title">Everyday style, delivered to your door.</h1>
+            <p class="hero-text">
+              Quality clothing, shoes and bags at fair prices. Order online
+              and get it in two days.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#products" class="btn btn-accent btn-lg">Browse the shop</a>
+              <a href="#why-us" class="btn btn-outline-light btn-lg">Why shop with us</a>
+            </div>
+          </div>
+
+          <!-- Hero image panel -->
+          <div class="col-lg-6">
+            <div class="hero-panel">
+              <img src="images/dress.svg" alt="Green print dress" class="hero-img">
+              <span class="badge hero-badge">Up to 30% off</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUCT SECTION ===================== -->
+    <section id="products" class="section">
+      <div class="container">
+
+        <div class="section-head text-center">
+          <h2 class="section-title">Best sellers</h2>
+          <p class="section-text">The pieces our customers keep coming back for.</p>
+        </div>
+
+        <!--
+          Bootstrap grid:
+          1 card per row on phones, 2 on tablets, 4 on desktop
+        -->
+        <div class="row g-4">
+
+          <!-- Product card 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <img src="images/shirt.svg" class="card-img-top" alt="Blue linen shirt">
+                <span class="badge product-badge">New</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="product-name">Classic Linen Shirt</h3>
+                <p class="product-desc">Light, breathable and easy to dress up or down.</p>
+                <p class="product-price mt-auto">18,500 naira</p>
+                <a href="#newsletter" class="btn btn-dark w-100">Shop Now</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product card 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <img src="images/sneakers.svg" class="card-img-top" alt="Red sneakers">
+                <span class="badge product-badge badge-sale">Sale</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="product-name">Everyday Sneakers</h3>
+                <p class="product-desc">Comfortable all day and clean on any outfit.</p>
+                <p class="product-price mt-auto">32,000 naira</p>
+                <a href="#newsletter" class="btn btn-dark w-100">Shop Now</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product card 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <img src="images/dress.svg" class="card-img-top" alt="Green print dress">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="product-name">Ankara Print Dress</h3>
+                <p class="product-desc">Bold colours with a flattering fit for any event.</p>
+                <p class="product-price mt-auto">24,000 naira</p>
+                <a href="#newsletter" class="btn btn-dark w-100">Shop Now</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product card 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="product-media">
+                <img src="images/bag.svg" class="card-img-top" alt="Brown leather bag">
+                <span class="badge product-badge">New</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="product-name">Leather Crossbody Bag</h3>
+                <p class="product-desc">Roomy enough for the day, neat enough for the night.</p>
+                <p class="product-price mt-auto">27,500 naira</p>
+                <a href="#newsletter" class="btn btn-dark w-100">Shop Now</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY US ===================== -->
+    <section id="why-us" class="section section-alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="section-title">Why shop with us</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature">
+              <h3 class="feature-title">Fast delivery</h3>
+              <p class="feature-text">Orders reach most cities in two days.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature">
+              <h3 class="feature-title">Secure payment</h3>
+              <p class="feature-text">Pay by card, bank transfer or on delivery.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature">
+              <h3 class="feature-title">Easy returns</h3>
+              <p class="feature-text">Wrong size? Send it back within seven days.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="feature">
+              <h3 class="feature-title">Real support</h3>
+              <p class="feature-text">Chat with a person on WhatsApp every day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section id="newsletter" class="section newsletter">
+      <div class="container text-center">
+        <h2 class="section-title">Get 10% off your first order</h2>
+        <p class="section-text">Join our list for new arrivals and special offers.</p>
+
+        <!-- Bootstrap input group: input and button side by side -->
+        <form class="newsletter-form input-group mx-auto" action="#" method="post">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <a class="brand" href="#home">Kora<span class="brand-accent">Store</span></a>
+          <p class="footer-text">Good clothes at fair prices, delivered across Nigeria.</p>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h4 class="footer-title">Quick links</h4>
+          <ul class="footer-list list-unstyled">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#products" class="footer-link">Products</a></li>
+            <li><a href="#why-us" class="footer-link">Why us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-list list-unstyled">
+            <li class="footer-text">hello@korastore.example</li>
+            <li class="footer-text">+234 800 000 0000</li>
+            <li class="footer-text">Lagos, Nigeria</li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="copyright">&copy; 2026 Kora Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript, needed for the mobile menu button -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

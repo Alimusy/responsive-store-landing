@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Brown leather bag">
+  <rect width="600" height="450" fill="#fbefd5"/>
+  <path d="M230 185 Q230 95 300 95 Q370 95 370 185" fill="none" stroke="#5a3418" stroke-width="16" stroke-linecap="round"/>
+  <rect x="155" y="175" width="290" height="200" rx="28" fill="#8a5428"/>
+  <path d="M155 203 Q155 175 183 175 L417 175 Q445 175 445 203 L445 255 Q300 290 155 255 Z" fill="#6f4120"/>
+  <rect x="280" y="255" width="40" height="34" rx="8" fill="#f6c453"/>
+</svg>

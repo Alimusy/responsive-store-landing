@@ -1,0 +1,399 @@
+/* ==========================================================
+   Kora Store landing page
+   Bootstrap handles the grid and navbar behaviour.
+   This file handles the look, and the media queries.
+   ========================================================== */
+
+/* ---------- 1. Design tokens (colours, spacing) ---------- */
+:root {
+  --ink: #14213d;          /* dark navy for text and dark sections */
+  --ink-soft: #4a5568;     /* softer grey for paragraphs */
+  --accent: #fca311;       /* amber for buttons and highlights */
+  --accent-dark: #e08e00;  /* hover colour for the accent */
+  --bg: #ffffff;
+  --bg-alt: #f4f6fa;       /* light section background */
+  --line: #e2e6ee;
+  --radius: 14px;
+  --section-space: 88px;   /* top and bottom space of each section */
+}
+
+/* ---------- 2. Base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* Stops the sticky header from covering a section title after a menu click */
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+/* ---------- 3. Header and navigation ---------- */
+.promo-bar {
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+}
+
+.main-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.brand-accent {
+  color: var(--accent);
+}
+
+.main-nav .nav-link {
+  color: var(--ink);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav .nav-link:hover {
+  color: var(--accent-dark);
+}
+
+/* ---------- 4. Buttons ---------- */
+.btn {
+  font-weight: 700;
+  border-radius: 999px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.btn-accent:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  color: var(--ink);
+}
+
+/* ---------- 5. Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--ink) 0%, #1f3a6b 100%);
+  color: #fff;
+  padding: var(--section-space) 0;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  font-weight: 300;
+  max-width: 480px;
+  margin-bottom: 32px;
+  color: #dbe3f2;
+}
+
+.hero-panel {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: var(--accent);
+  color: var(--ink);
+  font-size: 0.95rem;
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+/* ---------- 6. Shared section styles ---------- */
+.section {
+  padding: var(--section-space) 0;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+.section-head {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-text {
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+/* ---------- 7. Product cards ---------- */
+.product-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Cards lift slightly when you hover over them */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(20, 33, 61, 0.14);
+}
+
+.product-media {
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.badge-sale {
+  background: #d7263d;
+}
+
+.product-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.product-desc {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* ---------- 8. Why us features ---------- */
+.feature {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  height: 100%;
+  border-top: 4px solid var(--accent);
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.feature-text {
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+/* ---------- 9. Newsletter ---------- */
+.newsletter {
+  background: var(--ink);
+  color: #fff;
+}
+
+.newsletter .section-text {
+  color: #c4cfe4;
+}
+
+.newsletter-form {
+  max-width: 480px;
+  margin-top: 28px;
+}
+
+/* The extra ">" selectors make these rules strong enough to beat Bootstrap's input-group styles */
+.newsletter-form > .form-control {
+  border-radius: 999px 0 0 999px;
+  padding: 12px 20px;
+}
+
+.newsletter-form > .btn {
+  border-radius: 0 999px 999px 0;
+}
+
+/* ---------- 10. Footer ---------- */
+.site-footer {
+  background: #0d1730;
+  color: #c4cfe4;
+  padding: 56px 0 24px;
+}
+
+.site-footer .brand {
+  color: #fff;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.footer-text {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+}
+
+.footer-link {
+  color: #c4cfe4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.copyright {
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #243257;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN (media queries)
+   Written from large screens down to small ones.
+   ========================================================== */
+
+/* ---------- Tablets and below (under 992px) ---------- */
+@media (max-width: 991.98px) {
+  :root {
+    --section-space: 64px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  /* Hero text and image stack, so centre the text for a cleaner look */
+  .hero .col-lg-6:first-child {
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .d-flex {
+    justify-content: center;
+  }
+
+  /* Menu links get breathing room inside the opened mobile menu */
+  .main-nav .nav-link {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero-panel {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/* ---------- Large phones (under 768px) ---------- */
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-head {
+    margin-bottom: 32px;
+  }
+
+  /* Footer columns sit on separate rows, text aligns centrally */
+  .site-footer {
+    text-align: center;
+  }
+}
+
+/* ---------- Small phones (under 576px) ---------- */
+@media (max-width: 575.98px) {
+  :root {
+    --section-space: 48px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  /* Buttons fill the width so they are easy to tap */
+  .hero .btn {
+    width: 100%;
+  }
+
+  .promo-bar {
+    font-size: 0.78rem;
+  }
+
+  .brand {
+    font-size: 1.35rem;
+  }
+}

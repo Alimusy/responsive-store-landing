@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Red sneaker">
+  <rect width="600" height="450" fill="#fde8e4"/>
+  <path d="M110 310 L110 225 Q150 215 190 170 L235 195 Q275 245 340 245 L470 262 Q515 272 515 310 Z" fill="#d7263d"/>
+  <path d="M190 170 L235 195 L215 215 L172 192 Z" fill="#a51a2c"/>
+  <rect x="100" y="310" width="425" height="34" rx="14" fill="#14213d"/>
+  <line x1="238" y1="215" x2="268" y2="232" stroke="#fde8e4" stroke-width="6" stroke-linecap="round"/>
+  <line x1="258" y1="200" x2="288" y2="218" stroke="#fde8e4" stroke-width="6" stroke-linecap="round"/>
+  <line x1="278" y1="188" x2="308" y2="206" stroke="#fde8e4" stroke-width="6" stroke-linecap="round"/>
+</svg>

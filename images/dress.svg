@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Green print dress">
+  <rect width="600" height="450" fill="#dff3ec"/>
+  <path d="M262 70 L338 70 L352 165 L430 385 L170 385 L248 165 Z" fill="#1f8a70"/>
+  <rect x="246" y="160" width="108" height="16" rx="6" fill="#14213d"/>
+  <circle cx="230" cy="300" r="12" fill="#f6c453"/>
+  <circle cx="300" cy="340" r="12" fill="#f6c453"/>
+  <circle cx="370" cy="290" r="12" fill="#f6c453"/>
+  <circle cx="330" cy="240" r="10" fill="#f6c453"/>
+  <circle cx="265" cy="235" r="10" fill="#f6c453"/>
+</svg>
